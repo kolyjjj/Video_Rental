@@ -42,8 +42,7 @@ public class CustomerTest {
 
     @Test
     public void testChange() throws Exception {
-    	la = new Regular("LA Confidential");
-        //la.setPriceCode(Movie.REGULAR);
+        dinsdale.setRental(2, new Regular("LA Confidential"), 2);
         equalsFile("1st Output", "outputChange", dinsdale.statement());
     }
 

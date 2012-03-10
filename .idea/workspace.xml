@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="38c3f33b-81e6-4943-a4af-b4afed2d8d85" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Childrens.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/NewRelease.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Regular.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Customer.java" afterPath="$PROJECT_DIR$/src/Customer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Movie.java" afterPath="$PROJECT_DIR$/src/Movie.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rental.java" afterPath="$PROJECT_DIR$/src/Rental.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/CustomerTest.java" afterPath="$PROJECT_DIR$/test/CustomerTest.java" />
     </list>
     <ignored path="video-rental.iws" />
@@ -68,19 +61,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Customer.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Customer.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Customer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="40" selection-start="205" selection-end="205" vertical-scroll-proportion="0.0">
+            <state line="10" column="0" selection-start="268" selection-end="268" vertical-scroll-proportion="0.116161615">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CustomerTest.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="CustomerTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/CustomerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="0" selection-start="1406" selection-end="1406" vertical-scroll-proportion="0.24494949">
+            <state line="58" column="0" selection-start="1960" selection-end="1960" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -89,7 +82,7 @@
       <file leaf-file-name="Movie.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Movie.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="55" selection-start="115" selection-end="115" vertical-scroll-proportion="0.0">
+            <state line="0" column="48" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -107,7 +100,7 @@
       <file leaf-file-name="Regular.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Regular.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="18" selection-start="276" selection-end="276" vertical-scroll-proportion="0.0">
+            <state line="14" column="19" selection-start="329" selection-end="329" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -116,7 +109,7 @@
       <file leaf-file-name="Childrens.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Childrens.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="17" selection-start="160" selection-end="160" vertical-scroll-proportion="0.0">
+            <state line="14" column="37" selection-start="351" selection-end="351" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -125,7 +118,7 @@
       <file leaf-file-name="Rental.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Rental.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="46" selection-start="362" selection-end="362" vertical-scroll-proportion="0.0">
+            <state line="24" column="18" selection-start="480" selection-end="480" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -151,9 +144,9 @@
         <option value="$PROJECT_DIR$/src/Childrens.java" />
         <option value="$PROJECT_DIR$/src/NewRelease.java" />
         <option value="$PROJECT_DIR$/src/Regular.java" />
-        <option value="$PROJECT_DIR$/src/Customer.java" />
         <option value="$PROJECT_DIR$/src/Rental.java" />
         <option value="$PROJECT_DIR$/test/CustomerTest.java" />
+        <option value="$PROJECT_DIR$/src/Customer.java" />
       </list>
     </option>
   </component>
@@ -301,7 +294,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CustomerTest.testChange">
+  <component name="RunManager" selected="JUnit.CustomerTest">
     <configuration default="false" name="CustomerTest" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="Video-rental" />
@@ -583,19 +576,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Rental.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="46" selection-start="362" selection-end="362" vertical-scroll-proportion="0.0">
+        <state line="24" column="18" selection-start="480" selection-end="480" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Childrens.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="17" selection-start="160" selection-end="160" vertical-scroll-proportion="0.0" />
+        <state line="14" column="37" selection-start="351" selection-end="351" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Regular.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="18" selection-start="276" selection-end="276" vertical-scroll-proportion="0.0" />
+        <state line="14" column="19" selection-start="329" selection-end="329" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/NewRelease.java">
@@ -605,21 +602,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Movie.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="55" selection-start="115" selection-end="115" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Customer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="40" selection-start="205" selection-end="205" vertical-scroll-proportion="0.0">
+        <state line="0" column="48" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/CustomerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="0" selection-start="1406" selection-end="1406" vertical-scroll-proportion="0.24494949">
+        <state line="58" column="0" selection-start="1960" selection-end="1960" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Customer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="268" selection-end="268" vertical-scroll-proportion="0.116161615">
           <folding />
         </state>
       </provider>

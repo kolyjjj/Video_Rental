@@ -7,6 +7,7 @@ public class Customer {
 	private ArrayList<Rental> rentalList = new ArrayList<Rental>();
     private int frequentRenterPoints;
     private double totalAmount;
+    private String statement;
 
     public Customer(String name) {
 		this.name = name;
@@ -21,34 +22,37 @@ public class Customer {
 	}
 
 	public String statement() {
-		String result = "Rental Record for " + getName() + "\n";
-        return  result + calculateRentalRecord();
-	}
-
-    private String calculateRentalRecord() {
-        String result = "";
-        result = calculateAmountAndRentalPoints();
-        result += "Amount owed is " + String.valueOf(totalAmount) + "\n";
-        result += "You earned " + String.valueOf(frequentRenterPoints)
-                + " frequent renter points";
-        return result;
-
+		statement = "Rental Record for " + getName() + "\n";
+        calculateRentalRecord();
+        acquireTotalAmountStatement();
+        acquireFrequentRenterPointsStatement();
+	    return statement;
     }
 
-    private String calculateAmountAndRentalPoints() {
+    private void acquireFrequentRenterPointsStatement() {
+        statement += "You earned " + String.valueOf(frequentRenterPoints)
+                + " frequent renter points";
+    }
+
+    private void acquireTotalAmountStatement() {
+        statement += "Amount owed is " + String.valueOf(totalAmount) + "\n";
+    }
+
+    private void calculateRentalRecord() {
+       calculateAmountAndRentalPoints();
+    }
+
+    private void calculateAmountAndRentalPoints() {
         Iterator<Rental> rentals = rentalList.iterator();
-        String result = "";
         while (rentals.hasNext()) {
             double thisAmount = 0;
             Rental each = rentals.next();
             thisAmount = calculateAmount(each);
             calculateFrequentRenterPoints(each);
-            // show figures for this rental
-            result += "\t" + each.getMovie().getTitle() + "\t"
+            statement += "\t" + each.getMovie().getTitle() + "\t"
                     + String.valueOf(thisAmount) + "\n";
             totalAmount += thisAmount;
         }
-        return result;
     }
 
     private void calculateFrequentRenterPoints(Rental each) {
@@ -59,9 +63,11 @@ public class Customer {
         }
     }
 
-
     private double calculateAmount(Rental each) {
         return each.calculateAmount();
     }
 
+    public void setRental(int index, Movie movie, int daysRented) {
+        rentalList.set(index, new Rental(movie, daysRented));
+    }
 }
