@@ -14,11 +14,11 @@ public class CustomerTest {
 
     private Customer dinsdale = new Customer("Dinsdale Pirhana");
 
-    private Movie python = new Movie("Monty Python and the Holy Grail", Movie.REGULAR);
-	private Movie ran = new Movie("Ran", Movie.REGULAR);
-	private Movie la = new Movie("LA Confidential", Movie.NEW_RELEASE);
-	private Movie trek = new Movie("Star Trek 13.2", Movie.NEW_RELEASE);
-	private Movie wallace = new Movie("Wallace and Gromit", Movie.CHILDRENS);
+    private Movie python = new Regular("Monty Python and the Holy Grail");
+	private Movie ran = new Regular("Ran");
+	private Movie la = new NewRelease("LA Confidential" );
+	private Movie trek = new NewRelease("Star Trek 13.2");
+	private Movie wallace = new Childrens("Wallace and Gromit");
 
     @Before
     public void setUp (){
@@ -42,7 +42,8 @@ public class CustomerTest {
 
     @Test
     public void testChange() throws Exception {
-    	la.setPriceCode(Movie.REGULAR);
+    	la = new Regular("LA Confidential");
+        //la.setPriceCode(Movie.REGULAR);
         equalsFile("1st Output", "outputChange", dinsdale.statement());
     }
 
