@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.Iterator;
 
 public class Customer {
 
@@ -23,7 +22,7 @@ public class Customer {
 
 	public String statement() {
 		statement = "Rental Record for " + getName() + "\n";
-        calculateRentalRecord();
+        calculateAmountAndRentalPoints();
         acquireTotalAmountStatement();
         acquireFrequentRenterPointsStatement();
 	    return statement;
@@ -38,21 +37,23 @@ public class Customer {
         statement += "Amount owed is " + String.valueOf(totalAmount) + "\n";
     }
 
-    private void calculateRentalRecord() {
-       calculateAmountAndRentalPoints();
+    private void calculateAmountAndRentalPoints() {
+        for (Rental each : rentalList) {
+            calculateAmountAndPointsForEachRental(each);
+        }
     }
 
-    private void calculateAmountAndRentalPoints() {
-        Iterator<Rental> rentals = rentalList.iterator();
-        while (rentals.hasNext()) {
-            double thisAmount = 0;
-            Rental each = rentals.next();
-            thisAmount = calculateAmount(each);
-            calculateFrequentRenterPoints(each);
-            statement += "\t" + each.getMovie().getTitle() + "\t"
-                    + String.valueOf(thisAmount) + "\n";
-            totalAmount += thisAmount;
-        }
+    private void calculateAmountAndPointsForEachRental(Rental each) {
+        double thisAmount;
+        thisAmount = each.calculateAmount();
+        calculateFrequentRenterPoints(each);
+        attachAmountToStatement(each, thisAmount);
+        totalAmount += thisAmount;
+    }
+
+    private void attachAmountToStatement(Rental each, double thisAmount) {
+        statement += "\t" + each.getMovie().getTitle() + "\t"
+            + String.valueOf(thisAmount) + "\n";
     }
 
     private void calculateFrequentRenterPoints(Rental each) {
@@ -61,10 +62,6 @@ public class Customer {
         } else {
             frequentRenterPoints++;
         }
-    }
-
-    private double calculateAmount(Rental each) {
-        return each.calculateAmount();
     }
 
     public void setRental(int index, Movie movie, int daysRented) {

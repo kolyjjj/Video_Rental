@@ -9,10 +9,6 @@ public class Rental {
         this.daysRented = daysRented;
     }
 
-    public int getDaysRented() {
-        return daysRented;
-    }
-
     public Movie getMovie() {
         return movie;
     }
@@ -22,9 +18,6 @@ public class Rental {
     }
 
     public boolean isTwoDayNewRelease() {
-        if (daysRented>1 && movie instanceof NewRelease){
-            return true;
-        }
-        return false;
+        return daysRented > 1 && movie instanceof NewRelease;
     }
 }
